@@ -6,7 +6,7 @@ library(GetoptLong)
 library(MASS)
 library(pvclust)
 new_data_raw = as.data.frame(read.table("RNAseq_normalized101gene.txt", header=TRUE, stringsAsFactors=FALSE, row.names=1))
-allsamplenames = colnames(cn_data_plot)
+allsamplenames = colnames(new_data_raw)
 goodsamples= c(16,35,19,32,
                2,20,
                1,5,10,17,18,36,21,15,34,23,
